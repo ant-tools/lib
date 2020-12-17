@@ -1,0 +1,59 @@
+<project>
+	<property file="d://lib/libraries.properties" />
+	<property name="RUNTIME" value="D:/java/tomcat/webapps" />
+
+	<taskdef name="js.BuildResources" classname="js.tools.ant.task.BuildResources">
+		<classpath>
+			<pathelement path="${LIB-JS-ANT-TASK}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+			<pathelement path="${LIB-WOOD}" />
+			<pathelement path="${LIB-RHINO}" />
+			<pathelement path="${LIB-XERCESIMPL}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.BuildConfig" classname="js.tools.ant.task.BuildConfig">
+		<classpath>
+			<pathelement path="${LIB-JS-ANT-TASK}" />
+			<pathelement path="${LIB-XERCESIMPL}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.Sync" classname="js.tools.ant.task.Sync">
+		<classpath>
+			<pathelement path="${LIB-JS-ANT-TASK}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+			<pathelement path="${LIB-SERVER-CLIENT}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.GenerateScriptDoc" classname="js.tools.ant.task.GenerateScriptDoc">
+		<classpath>
+			<pathelement path="${LIB-JS-TOOLS}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.PackScriptArchive" classname="js.tools.ant.task.PackScriptArchive">
+		<classpath>
+			<pathelement path="${LIB-JS-TOOLS}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.Deploy" classname="js.tools.ant.task.Deploy">
+		<classpath>
+			<pathelement path="${LIB-JS-ANT-TASK}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+			<pathelement path="${LIB-SERVER-CLIENT}" />
+		</classpath>
+	</taskdef>
+
+	<taskdef name="js.PublishWidgets" classname="js.tools.ant.task.PublishWidgets">
+		<classpath>
+			<pathelement path="${LIB-JS-ANT-TASK}" />
+			<pathelement path="${LIB-JS-CLIENT}" />
+			<pathelement path="${LIB-SERVER-CLIENT}" />
+		</classpath>
+	</taskdef>
+</project>
